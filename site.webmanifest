@@ -1,0 +1,14 @@
+{
+  "name": "Peinture Vaudreuil — Avant emménagement",
+  "short_name": "Peinture Vaudreuil",
+  "description": "Peintres à Vaudreuil-Dorion pour peindre avant la prise de possession.",
+  "lang": "fr-CA",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fff8ef",
+  "theme_color": "#a8c8b9",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
