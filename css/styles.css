@@ -502,6 +502,37 @@ em { font-style: italic; }
   transition: transform .5s ease;
 }
 .galerie-grid figure:hover img { transform: scale(1.04); }
+/* Before/After hover swap */
+.galerie-grid figure.ba { position: relative; }
+.galerie-grid figure.ba .ba-before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity .4s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+.galerie-grid figure.ba:hover .ba-before { opacity: 1; }
+.galerie-grid figure.ba:hover img { transform: none; }
+.galerie-grid .ba-hint {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: var(--charbon);
+  color: var(--eau-soft);
+  font-family: var(--body);
+  font-weight: 600;
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  z-index: 3;
+}
 .galerie-grid figcaption {
   padding: 0.85rem 1.1rem 1rem;
   display: flex;
